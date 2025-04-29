@@ -5,13 +5,23 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Newman</title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
-
+    <title>{% block title %}{% endblock %}Newman Studio</title>
+    <meta content="Newman Studio Portfolio" name="description">
+    <meta content="Flickr, photo, image sharing, captions, ranking, social platform" name="keywords">
+    <meta content="Emmanuel Oteng" name="author">
+    
+    <meta property="og:url" content="http://{{ request.META.HTTP_HOST }}{{ request.path }}">
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="{% block og-caption %}Newman Studio{% endblock %}">
+    <meta property="og:description"
+        content="{% block og-description %}Personal website to tell more about myself{% endblock %}">
+    <meta property="og:image"
+        content="{% block og-image %}http://{{ request.META.HTTP_HOST }}{% static 'my_site/img/newman-img4.jpeg' %}{% endblock %}">
+    <meta property="twitter:image"
+        content="{% block tw-image %}http://{{ request.META.HTTP_HOST }}{% static 'my_site/img/newman-img4.jpeg' %}{% endblock %}">
     <!-- Favicons -->
-    <link href="{% static 'my_site/img/logo2.png' %}" rel="icon">
-    <link href="{% static 'my_site/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+    <link href="{% static 'my_site/img/logo2.png' %}" rel="icon" alt="Newman Studio">
+    <link href="{% static 'my_site/img/logo2.png' %}" rel="apple-touch-icon" alt="Newman Studio">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect">
