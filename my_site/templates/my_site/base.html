@@ -3,13 +3,22 @@
 <html lang="en">
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-29JVVTQS9Z"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-29JVVTQS9Z');
+    </script>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>{% block title %}{% endblock %}Newman Studio</title>
     <meta content="Newman Studio Portfolio" name="description">
     <meta content="Flickr, photo, image sharing, captions, ranking, social platform" name="keywords">
     <meta content="Emmanuel Oteng" name="author">
-    
+
     <meta property="og:url" content="http://{{ request.META.HTTP_HOST }}{{ request.path }}">
     <meta property="og:type" content="website" />
     <meta property="og:title" content="{% block og-caption %}Newman Studio{% endblock %}">
@@ -66,8 +75,10 @@
 
         <div class="social-links text-center">
             <a href="https://x.com/new_man233?s=21" class="twitter"><i class="bi bi-twitter-x"></i></a>
-            <a href="https://www.facebook.com/share/16RHdp7Yuz/?mibextid=wwXIfr" class="facebook"><i class="bi bi-facebook"></i></a>
-            <a href="https://www.instagram.com/newman_studio_?igsh=Y3c4dG01ZzFxeXg2&utm_source=qr" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.facebook.com/share/16RHdp7Yuz/?mibextid=wwXIfr" class="facebook"><i
+                    class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/newman_studio_?igsh=Y3c4dG01ZzFxeXg2&utm_source=qr" class="instagram"><i
+                    class="bi bi-instagram"></i></a>
             <a href="https://snapchat.com/t/wd54P74x" class="google-plus"><i class="bi bi-snapchat"></i></a>
             <a href="https://wa.me/message/E2JQ3GV6TRKIH1" class="linkedin"><i class="bi bi-whatsapp"></i></a>
         </div>
