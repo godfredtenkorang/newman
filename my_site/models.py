@@ -1,4 +1,5 @@
 from django.db import models
+from django.urls import reverse
 
 
 
@@ -23,6 +24,9 @@ class DigitalArt(models.Model):
     def __str__(self):
         return f"{self.title} - {self.name}"
     
+    def get_absolute_url(self):
+        return reverse('my_site:index')
+    
 class MusicCoverArt(models.Model):
     title = models.CharField(max_length=100, default='Music Cover Arts')
     name = models.CharField(max_length=100)
@@ -32,6 +36,9 @@ class MusicCoverArt(models.Model):
     
     def __str__(self):
         return f"{self.title} - {self.name}"
+    
+    def get_absolute_url(self):
+        return reverse('my_site:index')
     
 class Flyer(models.Model):
     title = models.CharField(max_length=100, default='Flyer')
@@ -43,6 +50,9 @@ class Flyer(models.Model):
     def __str__(self):
         return f"{self.title} - {self.name}"
     
+    def get_absolute_url(self):
+        return reverse('my_site:index')
+    
 class Logo(models.Model):
     title = models.CharField(max_length=100, default='Logos')
     name = models.CharField(max_length=100)
@@ -52,6 +62,9 @@ class Logo(models.Model):
     
     def __str__(self):
         return f"{self.title} - {self.name}"
+    
+    def get_absolute_url(self):
+        return reverse('my_site:index')
     
     
 class Contact(models.Model):
