@@ -25,7 +25,7 @@ class DigitalArt(models.Model):
         return f"{self.title} - {self.name}"
     
     def get_absolute_url(self):
-        return reverse('my_site:index')
+        return reverse('index')
     
 class MusicCoverArt(models.Model):
     title = models.CharField(max_length=100, default='Music Cover Arts')
@@ -38,7 +38,7 @@ class MusicCoverArt(models.Model):
         return f"{self.title} - {self.name}"
     
     def get_absolute_url(self):
-        return reverse('my_site:index')
+        return reverse('index')
     
 class Flyer(models.Model):
     title = models.CharField(max_length=100, default='Flyer')
@@ -51,7 +51,7 @@ class Flyer(models.Model):
         return f"{self.title} - {self.name}"
     
     def get_absolute_url(self):
-        return reverse('my_site:index')
+        return reverse('index')
     
 class Logo(models.Model):
     title = models.CharField(max_length=100, default='Logos')
@@ -64,7 +64,7 @@ class Logo(models.Model):
         return f"{self.title} - {self.name}"
     
     def get_absolute_url(self):
-        return reverse('my_site:index')
+        return reverse('index')
     
     
 class Contact(models.Model):
