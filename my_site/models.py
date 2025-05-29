@@ -67,6 +67,20 @@ class Logo(models.Model):
         return reverse('index')
     
     
+class Blog(models.Model):
+    title = models.CharField(max_length=100)
+    content = models.TextField()
+    image = models.ImageField(upload_to='blog/', default='')
+    date_added = models.DateTimeField(auto_now_add=True)
+    slug = models.SlugField(null=True, blank=True)
+    
+    class Meta:
+        ordering = ['-date_added']
+        
+    def __str__(self):
+        return self.title
+    
+    
 class Contact(models.Model):
     name = models.CharField(max_length=100)
     email = models.EmailField(null=True, blank=True)
