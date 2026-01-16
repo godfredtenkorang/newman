@@ -140,6 +140,9 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
+PAYSTACK_SECRET_KEY = config('PAYSTACK_SECRET_KEY')
+PAYSTACK_PUBLIC_KEY = config('PAYSTACK_PUBLIC_KEY')
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
