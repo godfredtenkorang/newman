@@ -1,6 +1,52 @@
 {% extends 'my_site/base.html' %}
 {% load static %}
 {% block content %}
+<style>
+.stats-item {
+  text-align: center;
+  padding: 30px;
+}
+
+.stats-item i {
+  font-size: 42px;
+  line-height: 1;
+  margin-bottom: 20px;
+  color: var(--primary-color, #007bff);
+}
+
+.stats-item .stats-number-wrapper {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.stats-item .purecounter {
+  display: inline-block;
+}
+
+.stats-item .plus-sign {
+  display: inline-block;
+  font-size: 36px;
+  font-weight: 700;
+  margin-left: 2px;
+  color: var(--primary-color, #007bff);
+}
+
+.stats-item p {
+  padding-top: 10px;
+  margin: 0;
+  font-size: 15px;
+  color: #6c757d;
+}
+
+.stats-item p strong {
+  font-weight: 600;
+  color: #343a40;
+}
+</style>
 
 <main class="main">
 
@@ -83,49 +129,56 @@
 
   </section><!-- /About Section -->
 
-  <!-- Stats Section -->
-  <section id="stats" class="stats section">
+<!-- Stats Section -->
+<section id="stats" class="stats section">
 
-    <div class="container" data-aos="fade-up" data-aos-delay="100">
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-      <div class="row gy-4">
+    <div class="row gy-4">
 
-        <div class="col-lg-3 col-md-6">
-          <div class="stats-item">
-            <i class="bi bi-emoji-smile"></i>
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item">
+          <i class="bi bi-emoji-smile"></i>
+          <div class="stats-number-wrapper">
             <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="1"
-              class="purecounter"></span>
-            <p><strong>Happy Clients</strong> </p>
+              class="purecounter"></span><span class="plus-sign">+</span>
           </div>
-        </div><!-- End Stats Item -->
+          <p><strong>Happy Clients</strong></p>
+        </div>
+      </div><!-- End Stats Item -->
 
-        <div class="col-lg-3 col-md-6">
-          <div class="stats-item">
-            <i class="bi bi-journal-richtext"></i>
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item">
+          <i class="bi bi-journal-richtext"></i>
+          <div class="stats-number-wrapper">
             <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="1"
-              class="purecounter"></span>
-            <p><strong>Projects</strong> </p>
+              class="purecounter"></span><span class="plus-sign">+</span>
           </div>
-        </div><!-- End Stats Item -->
+          <p><strong>Projects</strong></p>
+        </div>
+      </div><!-- End Stats Item -->
 
-        <div class="col-lg-3 col-md-6">
-          <div class="stats-item">
-            <i class="bi bi-headset"></i>
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item">
+          <i class="bi bi-headset"></i>
+          <div class="stats-number-wrapper">
             <span data-purecounter-start="0" data-purecounter-end="9" data-purecounter-duration="1"
-              class="purecounter"></span>
-            <p><strong>Hours Of Support</strong> </p>
+              class="purecounter"></span><span class="plus-sign">+</span>
           </div>
-        </div><!-- End Stats Item -->
+          <p><strong>Hours Of Support</strong></p>
+        </div>
+      </div><!-- End Stats Item -->
 
-        <div class="col-lg-3 col-md-6">
-          <div class="stats-item">
-            <i class="bi bi-people"></i>
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item">
+          <i class="bi bi-people"></i>
+          <div class="stats-number-wrapper">
             <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1"
-              class="purecounter"></span>
-            <p><strong>Hard Workers</strong> </p>
+              class="purecounter"></span><span class="plus-sign">+</span>
           </div>
-        </div><!-- End Stats Item -->
-
+          <p><strong>Hard Workers</strong></p>
+        </div>
+      </div><!-- End Stats Item -->
       </div>
 
     </div>
