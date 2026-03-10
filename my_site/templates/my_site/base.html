@@ -57,6 +57,14 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
 </head>
+<style>
+    .whatsapp-button {
+    position: fixed;
+    bottom: 60px;
+    right: 15px;
+    z-index: 999;
+}
+</style>
 
 <body class="index-page">
 
@@ -140,9 +148,15 @@
     <!-- Scroll Top -->
     <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
             class="bi bi-arrow-up-short"></i></a>
+            
 
-    <!-- Preloader -->
-    <div id="preloader"></div>
+            <!-- WhatsApp Button -->
+            <a href="https://wa.me/message/E2JQ3GV6TRKIH1" class="whatsapp-button" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="50" height="50">
+            </a>
+            
+            <!-- Preloader -->
+            <div id="preloader"></div>
 
     <!-- Vendor JS Files -->
     <script src="{% static 'my_site/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
